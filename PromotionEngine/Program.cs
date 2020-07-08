@@ -6,7 +6,19 @@ namespace PromotionEngine
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            BuildPromotionType1Map();
+            
         }
+
+
+        Dictionary<char, Promotiontype1> pt1 = new Dictionary<char, Promotiontype1>();
+    
+        
+        public static void BuildPromotionType1Dict(char skuId, Promotiontype1 promotiontype1){
+            pt1.Add(skuId, promotiontype1);
+
+        }
+
     }
 }
